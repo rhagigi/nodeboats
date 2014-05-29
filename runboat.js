@@ -73,6 +73,14 @@ board.on("ready", function() {
     }
   };
 
+  this.pinMode("D6", sparkBoard.MODES.OUTPUT);
+  var navigation = 1;
+  var self = this;
+  var navigationLights = function () {
+    self.digitalWrite("D6", (navigation ^= 1));
+  };
+  navigationLights();
+
   //onKeyPress controller
   function controller(ch, key){
     if(key && key.name){
@@ -88,6 +96,9 @@ board.on("ready", function() {
           break;
         case "a":
           left();
+          break;
+        case "n":
+          navigationLights();
           break;
       }
     }
