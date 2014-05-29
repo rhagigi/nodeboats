@@ -1,0 +1,23 @@
+{
+  "name": "nodeboats",
+  "version": "0.0.1",
+  "description": "Node. On boats.",
+  "main": "runboat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhagigi/nodeboats.git"
+  },
+  "author": "rhagigi & tjanczuk",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/rhagigi/nodeboats/issues"
+  },
+  "dependencies": {
+    "johnny-five": "~0.7.46",
+    "spark-io": "~0.4.0",
+    "keypress": "~0.2.1"
+  }
+}
